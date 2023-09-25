@@ -14,78 +14,112 @@
 </head>
 
 <body>
+    <div>
+
+    </div>
+
     <header>
         <img src="images/logo/ohmyfood.png" alt="logo ohmyfood">
-        <div>
+        <form>
             <span class="fa-solid fa-location-dot"></span>
-            <p>Paris, Belleville</p>
-        </div>
-
+            <input type="search" value="Paris, Belleville">
+        </form>
     </header>
     
     <main>
-        <section>
+        <header>
             <h1>Réservez le menu qui vous convient</h1>
+
             <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins</p>
-            <a href="#">Explorer nos restaurants</a>
-        </section>
+            <a href="#restaurants">Explorer nos restaurants</a>
+        </header>
 
         <section>
-            <h1>Fonctionnement</h1>
+            <h2>Fonctionnement</h2>
+
             <ul>
                 <li>
+                    <b>1</b>
                     <span class="fa-solid fa-mobile-screen-button"></span>
-                    <a href="#">Choississez un restaurant</a>
+                    <p>Choississez un restaurant</p>
                 </li>
                 <li>
+                    <b>2</b>
                     <span class="fa-solid fa-list"></span>
-                    <a href="#">Composez votre menu</a>
+                    <p>Composez votre menu</p>
                 </li>
                 <li>
+                    <b>3</b>
                     <span class="fa-solid fa-store"></span>
-                    <a href="#">Dégustez au restaurant</a>
+                    <p>Dégustez au restaurant</p>
                 </li>
             </ul>
         </section>
         
-        <section>
-            <h1>Restaurants</h1>
-            <a href="menus/lapalettedesgouts.html">
-                <article>
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'un plat de restaurant gastronomqique">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </article>
-            </a>
+        <article id="restaurants">
+            <h2>Restaurants</h2>
 
-            <a href="#">
-                <article>
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image vue du dessus d'un plat de restaurant gastronomique">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                </article>
-            </a>
+            <ul>
+                <li>
+                    <a href="menus/la-palette-du-gout.html">
+                        <figure>
+                            <p>Nouveau</p>
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'un plat de restaurant gastronomqique">
+                            <figcaption>
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                                <span class="fa-solid fa-heart"></span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
 
-            <a href="#">
-                <article>
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image d'un plat de poisson">
-                    <h3>A la française</h3>
-                    <p>Cité Rouge</p>
-                </article>
-            </a>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <p>Nouveau</p>
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image vue du dessus d'un plat de restaurant gastronomique">
+                            <figcaption>
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                                <span class="fa-solid fa-heart"></span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
 
-            <a href="#">
-                <article>
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image d'un plat de fromage">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                </article>
-            </a>
-        </section>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image d'un plat de poisson">
+                            <figcaption>
+                                <h3>A la française</h3>
+                                <p>Cité Rouge</p>
+                                <span class="fa-solid fa-heart"></span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image d'un plat de fromage">
+                            <figcaption>
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                                <span class="fa-solid fa-heart"></span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </article>
     </main>
 
     <footer>
-        <h2>ohmyfood</h2>
+        <h3>ohmyfood</h3>
+
         <ul>
             <li>
                 <span class="fa-solid fa-utensils"></span>
@@ -99,10 +133,9 @@
                 <a href="#">Mentions légales</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="mailto:contact@ohmyfood.fr">Contact</a>
             </li>
         </ul>
     </footer>
-
 </body>
 </html>
