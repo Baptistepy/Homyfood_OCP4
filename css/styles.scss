@@ -1,0 +1,56 @@
+*   {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+[id="menu"] h1,
+footer h3 {
+    font-family: 'Shrikhand', cursive;
+}
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+
+@media screen and (max-width: 768px) {
+    .header_logo     {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    
+
+        .logo_omf {
+            width: 50%;
+        }
+    }
+
+    header form {
+        border: none;
+    }
+}
