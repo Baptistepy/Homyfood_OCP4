@@ -42,6 +42,9 @@ $tertiary-color: #99E2D0;
         align-items: center;
         flex-direction: column;
         gap: 10px;
+        padding-bottom: 13px;
+        padding-top: 14px;
+        
 
         .logo_omf {
             width: 50%;
@@ -68,7 +71,10 @@ $tertiary-color: #99E2D0;
         display: flex;
         flex-direction: column;
         text-align: center;
+        align-items: center;
         padding: 10px;
+        background: var(--Background, #F6F6F6);
+        padding-bottom: 40px;
 
         h1 {
             font-weight: bolder;
@@ -83,9 +89,39 @@ $tertiary-color: #99E2D0;
     .btn_resto {
         border: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%)) solid 2px;
         background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%)); 
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); 
         color: white;
+        min-width: 218px;
+        max-width: 100%;
         border-radius: 40px;
-        padding: 12px 0px 12px 0px;
-        margin: 0px 55px 0px 55px;
+        padding: 13px 5px 13px 5px;
+    }
+
+    .list_nav {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 322px;
+            gap: 10px;
+            padding: 0px;
+        }
+        
+        .card_nav { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--Grey-2, #EAEAEA);
+        border-radius: 18px;
+        gap: 17px;
+        }
+        b {
+            position: absolute;
+            left: 17px;
+        }
     }
 }

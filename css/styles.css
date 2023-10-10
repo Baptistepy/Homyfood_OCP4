@@ -39,6 +39,8 @@ footer h3 {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 13px;
+    padding-top: 14px;
   }
   .header_logo .logo_omf {
     width: 50%;
@@ -61,7 +63,10 @@ footer h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     padding: 10px;
+    background: var(--Background, #F6F6F6);
+    padding-bottom: 40px;
   }
   .header_menu h1 {
     font-weight: bolder;
@@ -74,9 +79,36 @@ footer h3 {
   .btn_resto {
     border: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)) solid 2px;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     color: white;
+    min-width: 218px;
+    max-width: 100%;
     border-radius: 40px;
-    padding: 12px 0px 12px 0px;
-    margin: 0px 55px 0px 55px;
+    padding: 13px 5px 13px 5px;
+  }
+  .list_nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .list_nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 322px;
+    gap: 10px;
+    padding: 0px;
+  }
+  .list_nav .card_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--Grey-2, #EAEAEA);
+    border-radius: 18px;
+    gap: 17px;
+  }
+  .list_nav b {
+    position: absolute;
+    left: 17px;
   }
 }/*# sourceMappingURL=styles.css.map */
