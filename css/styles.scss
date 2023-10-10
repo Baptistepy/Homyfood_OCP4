@@ -60,13 +60,13 @@ $tertiary-color: #99E2D0;
         height: 50px;
         gap: 14px;
         padding-left: 20px;
-        background: var(--Grey-2, #EAEAEA);
-        color: var(--Grey, #353535); 
+        background: var(--grey-2, #EAEAEA);
+        color: var(--grey, #353535); 
 
         .form_search {
-            border: 2px solid var(--Grey-2, #EAEAEA);
-            background-color: solid var(--Grey-2, #EAEAEA);
-            color: var(--Grey, #353535); 
+            border: 2px solid var(--grey-2, #EAEAEA);
+            background-color: solid var(--grey-2, #EAEAEA);
+            color: var(--grey, #353535); 
             font-weight: bolder;
         }
     }
@@ -77,7 +77,7 @@ $tertiary-color: #99E2D0;
         text-align: center;
         align-items: center;
         padding: 10px;
-        background: var(--Background, #F6F6F6);
+        background: var(--background, #F6F6F6);
         padding-bottom: 40px;
 
         h1 {
@@ -91,8 +91,9 @@ $tertiary-color: #99E2D0;
     }
 
     .btn_resto {
-        border: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%)) solid 2px;
-        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%)); 
+        $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
+
+        background: $gradient; 
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); 
         color: white;
         min-width: 218px;
@@ -116,29 +117,30 @@ $tertiary-color: #99E2D0;
         }
         
         .card_nav { 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #F6F6F6;
-        border-radius: 18px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        gap: 17px;
-        background: var(--Background, #F6F6F6); 
-        margin-left: 12px;
-        margin-right: 20px;
-        padding-top: 3px;
-        padding-bottom: 3px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #F6F6F6;
+            border-radius: 18px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            gap: 17px;
+            background: var(--background, #F6F6F6); 
+            margin-left: 12px;
+            margin-right: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+
+            &:hover span,
+            &:focus span {
+                color: $primary-color;            
+            }
         }
 
         span {
             position: absolute;
             left: 60px;
             color: gray;
-        }
-
-        span:hover {
-            color: $primary-color;
         }
 
         b {
@@ -152,13 +154,8 @@ $tertiary-color: #99E2D0;
         flex-direction: column;
         padding-left: 18px;
         padding-right: 18px;
-        background: var(--Background, #F6F6F6);
-<<<<<<< HEAD
+        background: var(--background, #F6F6F6);
         padding-bottom: 30px;
-=======
-
-
->>>>>>> dev
 
         ul {
             width: 100%;
@@ -201,11 +198,8 @@ $tertiary-color: #99E2D0;
 
         span {
             position: absolute;
-<<<<<<< HEAD
             right: 10px;
             bottom: 55px;
-=======
->>>>>>> dev
         }
 
         img {
@@ -220,9 +214,8 @@ $tertiary-color: #99E2D0;
             top: 9%;
             left: 83%;
             transform: translate(-50%, -50%);
-            color: var(--Green-Font, #008766);
+            color: var(--green-font, #008766);
             font-weight: bolder;
-<<<<<<< HEAD
             font-size: smaller;
             border: 2px solid #99E2D0;
             background-color: #99E2D0;
@@ -235,7 +228,7 @@ $tertiary-color: #99E2D0;
         display: flex;
         flex-direction: column;
         padding-left: 25px;
-        background: var(--Grey, #353535);
+        background: var(--grey, #353535);
         color: white;
 
         ul {
@@ -249,8 +242,6 @@ $tertiary-color: #99E2D0;
 
         a {
             color: white;
-=======
->>>>>>> dev
         }
     }
 }

@@ -55,13 +55,13 @@ footer h3 {
     height: 50px;
     gap: 14px;
     padding-left: 20px;
-    background: var(--Grey-2, #EAEAEA);
-    color: var(--Grey, #353535);
+    background: var(--grey-2, #EAEAEA);
+    color: var(--grey, #353535);
   }
   form .form_search {
-    border: 2px solid var(--Grey-2, #EAEAEA);
-    background-color: solid var(--Grey-2, #EAEAEA);
-    color: var(--Grey, #353535);
+    border: 2px solid var(--grey-2, #EAEAEA);
+    background-color: solid var(--grey-2, #EAEAEA);
+    color: var(--grey, #353535);
     font-weight: bolder;
   }
   .header_menu {
@@ -70,7 +70,7 @@ footer h3 {
     text-align: center;
     align-items: center;
     padding: 10px;
-    background: var(--Background, #F6F6F6);
+    background: var(--background, #F6F6F6);
     padding-bottom: 40px;
   }
   .header_menu h1 {
@@ -82,8 +82,7 @@ footer h3 {
     margin-top: 10px;
   }
   .btn_resto {
-    border: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)) solid 2px;
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     color: white;
     min-width: 218px;
@@ -113,19 +112,19 @@ footer h3 {
     border-radius: 18px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     gap: 17px;
-    background: var(--Background, #F6F6F6);
+    background: var(--background, #F6F6F6);
     margin-left: 12px;
     margin-right: 20px;
     padding-top: 3px;
     padding-bottom: 3px;
   }
+  .list_nav .card_nav:hover span, .list_nav .card_nav:focus span {
+    color: #9356DC;
+  }
   .list_nav span {
     position: absolute;
     left: 60px;
     color: gray;
-  }
-  .list_nav span:hover {
-    color: #9356DC;
   }
   .list_nav b {
     position: absolute;
@@ -136,11 +135,8 @@ footer h3 {
     flex-direction: column;
     padding-left: 18px;
     padding-right: 18px;
-    background: var(--Background, #F6F6F6);
-<<<<<<< HEAD
+    background: var(--background, #F6F6F6);
     padding-bottom: 30px;
-=======
->>>>>>> dev
   }
   #restaurants ul {
     width: 100%;
@@ -178,11 +174,8 @@ footer h3 {
   }
   #restaurants span {
     position: absolute;
-<<<<<<< HEAD
     right: 10px;
     bottom: 55px;
-=======
->>>>>>> dev
   }
   #restaurants img {
     width: 100%;
@@ -196,9 +189,8 @@ footer h3 {
     top: 9%;
     left: 83%;
     transform: translate(-50%, -50%);
-    color: var(--Green-Font, #008766);
+    color: var(--green-font, #008766);
     font-weight: bolder;
-<<<<<<< HEAD
     font-size: smaller;
     border: 2px solid #99E2D0;
     background-color: #99E2D0;
@@ -209,7 +201,7 @@ footer h3 {
     display: flex;
     flex-direction: column;
     padding-left: 25px;
-    background: var(--Grey, #353535);
+    background: var(--grey, #353535);
     color: white;
   }
   footer ul {
@@ -222,7 +214,5 @@ footer h3 {
   }
   footer a {
     color: white;
-=======
->>>>>>> dev
   }
 }/*# sourceMappingURL=styles.css.map */
