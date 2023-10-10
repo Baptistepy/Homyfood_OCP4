@@ -137,7 +137,10 @@ footer h3 {
     padding-left: 18px;
     padding-right: 18px;
     background: var(--Background, #F6F6F6);
+<<<<<<< HEAD
     padding-bottom: 30px;
+=======
+>>>>>>> dev
   }
   #restaurants ul {
     width: 100%;
@@ -175,8 +178,11 @@ footer h3 {
   }
   #restaurants span {
     position: absolute;
+<<<<<<< HEAD
     right: 10px;
     bottom: 55px;
+=======
+>>>>>>> dev
   }
   #restaurants img {
     width: 100%;
@@ -192,6 +198,7 @@ footer h3 {
     transform: translate(-50%, -50%);
     color: var(--Green-Font, #008766);
     font-weight: bolder;
+<<<<<<< HEAD
     font-size: smaller;
     border: 2px solid #99E2D0;
     background-color: #99E2D0;
@@ -215,5 +222,7 @@ footer h3 {
   }
   footer a {
     color: white;
+=======
+>>>>>>> dev
   }
 }/*# sourceMappingURL=styles.css.map */
