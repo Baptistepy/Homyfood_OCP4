@@ -127,8 +127,19 @@ footer h3 {
     color: gray;
   }
   .list_nav b {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    background: #9356DC;
+    border: 2px solid #9356DC;
+    color: white;
+    font-size: smaller;
+    text-align: center;
     position: absolute;
-    left: 29px;
+    left: 26px;
   }
   #restaurants {
     display: flex;
