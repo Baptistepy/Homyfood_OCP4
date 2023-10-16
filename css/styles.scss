@@ -36,6 +36,8 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
+$gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
+
 @media screen and (max-width: 768px) {
     .header_logo     {
         display: flex;
@@ -91,7 +93,6 @@ $tertiary-color: #99E2D0;
     }
 
     .btn_resto {
-        $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
 
         background: $gradient; 
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); 
@@ -207,12 +208,50 @@ $tertiary-color: #99E2D0;
             margin-left: 13px;
         }
 
-        span {
+        i {
             position: absolute;
-            right: 10px;
-            bottom: 55px;
+            right: 30px;
+            top: 180px;
         }
 
+        .card_heart {
+
+        .fa-heart {
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .heart_full{
+            opacity: 0;
+            transition: all 0.2s;
+        
+            &.heart_full {
+            opacity: 1;
+            color: linear-gradient($primary-color, $secondary-color);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: $primary-color;
+            }
+        } 
+
+        .heart_empty {
+            position: absolute;
+            transition: all 300ms cubic-bezier(.95,-0.58,1,1);
+        }
+    
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked ~ label .heart_empty{
+                transform: scale(1);
+            }
+
+            &:checked ~ label .heart_full{
+                transition: all 300ms ease-in;
+                transform: scale(0);
+            }
+        }
+    
         img {
             width: 100%;
             height: 150px;
@@ -233,8 +272,6 @@ $tertiary-color: #99E2D0;
             padding: 2px 5px 2px 5px;
             border-radius: 2px;
         }
-
-        input[type="checkbox"]:checked ~ label .heart1 {
     }
 
     footer {    
