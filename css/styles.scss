@@ -214,7 +214,6 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
             top: 180px;
         }
 
-        .card_heart {
 
         .fa-heart {
             font-size: 25px;
@@ -222,17 +221,14 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
         }
 
         .heart_full{
-            opacity: 0;
-            transition: all 0.2s;
-        
-            &.heart_full {
+            transition: all 0.2s;       
             opacity: 1;
             color: linear-gradient($primary-color, $secondary-color);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: $primary-color;
             }
-        } 
+        
 
         .heart_empty {
             position: absolute;
