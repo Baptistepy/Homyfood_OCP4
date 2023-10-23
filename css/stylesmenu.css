@@ -86,7 +86,6 @@ main article {
   display: flex;
   flex-direction: column;
   padding: 50px 0 60px 0;
-  width: 100%;
 }
 
 .section-menu {
@@ -112,6 +111,38 @@ main article {
   width: 100%;
   gap: 14px;
   padding: 0px;
+}
+
+.list-menu li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.list li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.list li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.list li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.list li:nth-child(4) {
+  animation-delay: 0.8s;
 }
 
 .card-plat {
