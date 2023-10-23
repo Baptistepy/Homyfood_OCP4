@@ -213,14 +213,6 @@ main article {
         align-self: flex-end;
     }
 
-    span {
-        display: none;
-    }
-
-    &:hover span {
-        display: block;
-    }
-
     section {
         display: flex;
         flex-direction: column;
@@ -239,6 +231,8 @@ main article {
         margin: 0;
     }
 }
+
+
 
 .btn_command {
     display: flex;

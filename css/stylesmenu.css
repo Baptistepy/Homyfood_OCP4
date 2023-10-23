@@ -159,12 +159,6 @@ main article {
   display: flex;
   align-self: flex-end;
 }
-.card-plat span {
-  display: none;
-}
-.card-plat:hover span {
-  display: block;
-}
 .card-plat section {
   display: flex;
   flex-direction: column;
