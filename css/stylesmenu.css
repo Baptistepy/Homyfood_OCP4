@@ -35,8 +35,13 @@
   padding-left: 20px;
 }
 
-.header-content-menu i {
+.header-content-menu {
   position: relative;
+}
+.header-content-menu i {
+  position: absolute;
+  right: 40px;
+  top: 45px;
 }
 .header-content-menu .fa-heart {
   font-size: 25px;
@@ -100,11 +105,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 15px;
   border-radius: 18px;
   padding: 12px 0 15px 12px;
   width: 90%;
-  box-shadow: 5px 5px 3px var(--dark-grey-shadow);
+  border-radius: 15.043px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -114,4 +120,30 @@
 }
 .card-plat span {
   display: none;
+}
+.card-plat:hover span {
+  display: block;
+}
+.card-plat section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-plat h3 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+.card-plat p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=stylesmenu.css.map */

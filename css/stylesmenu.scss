@@ -2,6 +2,22 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
+@mixin roboto500 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+@mixin roboto300 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+
 $transition-duration: 500ms;
 
 $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
@@ -52,9 +68,12 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
 }
 
 .header-content-menu {
+    position: relative;
 
     i {
-        position: relative;
+        position: absolute;
+        right: 40px;
+        top: 45px;
     }
 
     .fa-heart {
@@ -129,11 +148,12 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-bottom: 15px;
         border-radius: 18px;
         padding: 12px 0 15px 12px;
         width: 90%;
-        box-shadow: 5px 5px 3px var(--dark-grey-shadow);
+        border-radius: 15.043px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
         overflow: hidden;
         background-color: #ffffff;
 
@@ -144,5 +164,27 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
 
         span {
             display: none;
+        }
+
+        &:hover span {
+            display: block;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        h3 {
+            @include roboto500;
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            @include roboto300;
+            padding: 0;
+            margin: 0;
         }
     }
