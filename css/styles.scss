@@ -178,6 +178,12 @@ form {
   border-radius: 40px;
   padding: 13px 5px 13px 5px;
   font-size: larger;
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: .25rem .25rem 10px rgba(0,0,0,.5);
+    opacity: 0.9;
+  }
 }
 
 .list_nav {
@@ -372,9 +378,4 @@ footer {
 
 
 @media (min-width: 768px) {
-
-
-
-
-
 }

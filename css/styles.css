@@ -148,6 +148,11 @@ form .form_search {
   padding: 13px 5px 13px 5px;
   font-size: larger;
 }
+.btn_gradient:hover {
+  background-color: #fff;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+}
 
 .list_nav {
   padding-left: 20px;
