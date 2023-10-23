@@ -1,0 +1,148 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+
+$transition-duration: 500ms;
+
+$gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
+
+.header-menu {
+
+    img {
+        width: 50%;
+        margin: 15px;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span {
+        position: absolute;
+        left: 17px;
+        top: 30px;
+    }
+}
+
+#menu {
+    background-color:var(--Background, #F6F6F6)
+}
+.main-menu {
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        color: var(--Black, #101010);
+        font-family: Shrikhand;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 25px;
+        padding-left: 20px;
+    }       
+}
+
+.header-content-menu {
+
+    i {
+        position: relative;
+    }
+
+    .fa-heart {
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .heart_full {
+        transition: all $transition-duration;
+        opacity: 1;
+        color: linear-gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: $primary-color;
+    }
+
+
+    .heart_empty {
+        position: absolute;
+        transition: all $transition-duration cubic-bezier(.95, -0.58, 1, 1);
+    }
+
+    input[type="checkbox"] {
+        display: none;
+
+        &:checked~label .heart_empty {
+        transform: scale(1);
+        }
+
+        &:checked~label .heart_full {
+        transition: all 300ms ease-in;
+        transform: scale(0);
+        }
+    }
+}
+
+.content-menu {
+    border: 1px solid black;
+    border-radius: 40px 40px 0px 0px; 
+}
+
+.section-menu {
+
+    padding-left: 15px;
+
+    h2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 85%;
+    border-bottom: 2px solid $tertiary-color;
+    width: 30px;
+    padding-bottom: 5px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 14px;
+        padding: 0px;
+    }
+}
+
+    .card-plat {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 15px;
+        border-radius: 18px;
+        padding: 12px 0 15px 12px;
+        width: 90%;
+        box-shadow: 5px 5px 3px var(--dark-grey-shadow);
+        overflow: hidden;
+        background-color: #ffffff;
+
+        b {
+            display: flex;
+            align-self: flex-end;
+        }
+
+        span {
+            display: none;
+        }
+    }

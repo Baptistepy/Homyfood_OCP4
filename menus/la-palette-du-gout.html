@@ -14,27 +14,33 @@
     </head>
 
     <body id="menu">
-        <header class="">
+        <header class="header-menu">
             <a href="../index.html">
-                <span class="fa-solid fa-arrow-left"></span>
+                <span class="fa-solid fa-arrow-left fa-lg"></span>
                 <img src="../images/logo/ohmyfood.png" alt="logo ohmyfood">
             </a>
         </header>
 
-        <main>
+        <main class="main-menu">
             <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
 
-            <article>
-                <header>
+            <article class="content-menu">
+                <header class="header-content-menu">
                     <h1>La palette du goût</h1>
-                    <span class="fa-solid fa-heart"></span>
+                    <div class="card_heart">
+                        <input type="checkbox" id="check-heart-one" name="check" checked="">
+                        <label for="check-heart-one" class="heart-content">
+                            <i class="fa-regular fa-heart fa-xl heart_empty"></i>
+                            <i class="fa-solid fa-heart fa-xl heart_full"></i>
+                        </label>
+                    </div>
                 </header>
 
-                <section>
+                <section class="section-menu">
                     <h2>Entrées</h2>
 
                     <ul>
-                        <li>
+                        <li class="card-plat">
                             <section>
                                 <h3>Fricassée d'escargots</h3>
                                 <p>Au piment d'Espelette</p>
@@ -43,7 +49,7 @@
                             <b>25€</b>
                             <span class="fa-solid fa-circle-check"></span>
                         </li>
-                        <li>
+                        <li class="card-plat">
                             <section>
                                 <h3>Foie gras de canard mi-cuit</h3>
                                 <p>Et ses copeaux de truffe noire</p>
@@ -52,7 +58,7 @@
                             <b>35€</b>
                             <span class="fa-solid fa-circle-check"></span>
                         </li>
-                        <li>
+                        <li class="card-plat">
                             <section>
                                 <h3>Œuf au plat</h3>
                                 <p>Assaisonné à la truffe sur lit de caviar</p>                               
@@ -64,7 +70,7 @@
                     </ul>
                 </section>
                 
-                <section>
+                <section class="section-menu">
                     <h2>Plats</h2>
 
                     <ul>
@@ -98,7 +104,7 @@
                     </ul>
                 </section>
 
-                <section>
+                <section class="section-menu">
                     <h2>Desserts</h2>
 
                     <ul>
@@ -133,7 +139,7 @@
                 </section>
             </article>
 
-            <button>Commander</button>
+            <button class="btn_gradient">Commander</button>
         </main>
 
         <footer>

@@ -32,6 +32,8 @@ footer h3 {
   font-family: 'Shrikhand', cursive;
 }
 
+@import "../css/stylesmenu.css";
+
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
@@ -159,6 +161,7 @@ form {
   max-width: 100%;
   border-radius: 40px;
   padding: 13px 5px 13px 5px;
+  font-size: larger;
 }
 
 .list_nav {
