@@ -72,6 +72,7 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
   }
 
   .content-menu {
+    padding: 30px;
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
@@ -142,8 +143,7 @@ main article {
 }
 
 .section-menu {
-
-    padding-left: 15px;
+    padding: 15px;
     margin-bottom: 15px;
 
     h2 {
@@ -156,11 +156,7 @@ main article {
     }
 
     ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 100%;
-    gap: 14px;
     padding: 0px;
     }
 }
@@ -194,44 +190,42 @@ main article {
     animation-delay: 0.6s;
     }
 
-  .card-plat {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-radius: 18px;
-    padding: 12px 0 15px 12px;
-    width: 90%;
-    border-radius: 15.043px;
-    background: var(--White, #FFF);
-    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-    overflow: hidden;
-    background-color: #ffffff;
-
-    b {
+    .card-plat {
         display: flex;
-        align-self: flex-end;
-    }
+        align-items: center;
+        width: 100%;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
 
-    section {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
+        h3  {
+            @include roboto700;
+            padding: 0;
+            margin: 0;
+        }
 
-    h3 {
-        @include roboto700;
-        padding: 0;
-        margin: 0;
-    }
+        p {
+            @include roboto300;
+            padding: 0;
+            margin: 0;
+        }
 
-    p {
-        @include roboto300;
-        padding: 0;
-        margin: 0;
-    }
-}
+        .menu-section {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
 
+        .menu-price {
+            margin-left: auto;
+            padding: 1rem;
+        }
+
+        .menu-check {
+            background-color: $tertiary-color;
+        }
+    }
 
 
 .btn_command {
