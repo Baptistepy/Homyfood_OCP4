@@ -44,216 +44,219 @@ $transition-duration: 500ms;
 
 $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
 
-.header-menu {
+@media screen and (min-width: 375px) {
+  .header-menu {
 
-  img {
-    width: 50%;
-    margin: 15px;
-  }
-
-  a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  span {
-      position: absolute;
-      left: 17px;
-      top: 30px;
-  }
-}
-
-#menu {
-    background-color:var(--Background, #F6F6F6)
-}
-
-.main-menu {
-
-  img {
-    max-width: 100%;
-    max-height: 32rem;
-    width: 100%;
-    object-fit: cover
-  }
-
-  .content-menu {
-    padding: 20px;
-    margin-top: -4rem;
-    border-radius: 2rem 2rem 0 0;
-    background-color: #f6f6f6;
-    z-index: 9999;
-    position: relative;
-    padding-bottom: 0px;
-  }
-
-  h1 {
-    color: var(--Black, #101010);
-    @include shrikhand400;
-    margin-left: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding-top: 25px;
-    padding-left: 20px;
-  }       
-}
-
-.header-content-menu {
-  position: relative;
-
-  i {
-    position: absolute;
-    right: 40px;
-    top: 45px;
-  }
-
-  .fa-heart {
-    font-size: 25px;
-    cursor: pointer;
-  }
-
-  .heart_full {
-    transition: all $transition-duration;
-    opacity: 1;
-    color: linear-gradient($primary-color, $secondary-color);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: $primary-color;
-  }
-
-
-  .heart_empty {
-    position: absolute;
-    transition: all $transition-duration cubic-bezier(.95, -0.58, 1, 1);
-  }
-
-  input[type="checkbox"] {
-    display: none;
-
-    &:checked~label .heart_empty {
-    transform: scale(1);
+    img {
+      width: 50%;
+      margin: 15px;
     }
-
-    &:checked~label .heart_full {
-    transition: all 300ms ease-in;
-    transform: scale(0);
-    }
-  }
-}
-
-main article {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0 60px 0;
-}
-
-.section-menu {
-    padding: 15px;
-    margin-bottom: 15px;
-
-    h2 {
-    @include roboto500;
-    text-transform: uppercase;
-    opacity: 85%;
-    border-bottom: 2px solid $tertiary-color;
-    width: 30px;
-    padding-bottom: 5px;
-    }
-
-    ul {
-    width: 100%;
-    padding: 0px;
-    }
-}
-
-.list-menu li {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fade-in 1.5s ease-in-out forwards;
-}
-
-    @keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-    }
-
-    .list li:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-    .list li:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-    .list li:nth-child(3) {
-    animation-delay: 0.6s;
-    }
-
-    .card-plat {
+  
+    a {
         display: flex;
+        justify-content: center;
         align-items: center;
-        width: 100%;
-        border-radius: 15px;
-        background-color: white;
-        margin-bottom: 20px;
-        overflow: hidden;
-
-        h3  {
-            @include roboto700;
-            padding: 0;
-            margin: 0;
-            @include hidden-ellipsis;
-        }
-
-        p {
-            @include roboto300;
-            padding: 0;
-            margin: 0;
-            @include hidden-ellipsis;
-        }
-
-        .menu-section {
-            display: flex;
-            flex-direction: column;
-            margin-left: 15px;
-            gap: 3px;
-            @include hidden-ellipsis;
-        }
-
-        .menu-price {
-            margin-left: auto;
-            display: flex;
-            flex-direction: column;
-            align-self: flex-end;
-            margin-bottom: 7px;
-            padding-right: 15px;
-        }
     }
-
-    .menu-check {
-      border: 1px solid $tertiary-color;
-      border-radius: 0;
-      padding: 1rem;
-      background-color: $tertiary-color;
-      margin-right: -3.2rem;
-      color: white;
-      transition: margin-right $transition-duration;
-
-      .card-plat:hover &.menu-check {
-        margin-right: 0rem;
+  
+    span {
+        position: absolute;
+        left: 17px;
+        top: 30px;
+    }
+  }
+  
+  #menu {
+      background-color:var(--Background, #F6F6F6)
+  }
+  
+  .main-menu {
+  
+    img {
+      max-width: 100%;
+      max-height: 32rem;
+      width: 100%;
+      object-fit: cover
+    }
+  
+    .content-menu {
+      padding: 20px;
+      margin-top: -4rem;
+      border-radius: 2rem 2rem 0 0;
+      background-color: #f6f6f6;
+      z-index: 9999;
+      position: relative;
+      padding-bottom: 0px;
+    }
+  
+    h1 {
+      color: var(--Black, #101010);
+      @include shrikhand400;
+      margin-left: 15px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 25px;
+      padding-left: 20px;
+    }       
+  }
+  
+  .header-content-menu {
+    position: relative;
+  
+    i {
+      position: absolute;
+      right: 40px;
+      top: 45px;
+    }
+  
+    .fa-heart {
+      font-size: 25px;
+      cursor: pointer;
+    }
+  
+    .heart_full {
+      transition: all $transition-duration;
+      opacity: 1;
+      color: linear-gradient($primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: $primary-color;
+    }
+  
+  
+    .heart_empty {
+      position: absolute;
+      transition: all $transition-duration cubic-bezier(.95, -0.58, 1, 1);
+    }
+  
+    input[type="checkbox"] {
+      display: none;
+  
+      &:checked~label .heart_empty {
+      transform: scale(1);
+      }
+  
+      &:checked~label .heart_full {
+      transition: all 300ms ease-in;
+      transform: scale(0);
+      }
+    }
+  }
+  
+  main article {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 0 60px 0;
+  }
+  
+  .section-menu {
+      padding: 15px;
+      margin-bottom: 15px;
+  
+      h2 {
+      @include roboto500;
+      text-transform: uppercase;
+      opacity: 85%;
+      border-bottom: 2px solid $tertiary-color;
+      width: 30px;
+      padding-bottom: 5px;
+      }
+  
+      ul {
+      width: 100%;
+      padding: 0px;
       }
   }
-
-.btn_command {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-    padding-top: 15px;
+  
+  .list-menu li {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fade-in 1.5s ease-in-out forwards;
+  }
+  
+      @keyframes fade-in {
+      0% {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      100% {
+          opacity: 1;
+          transform: none;
+      }
+      }
+  
+      .list li:nth-child(1) {
+      animation-delay: 0.2s;
+  }
+  
+      .list li:nth-child(2) {
+      animation-delay: 0.4s;
+  }
+  
+      .list li:nth-child(3) {
+      animation-delay: 0.6s;
+      }
+  
+      .card-plat {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          border-radius: 15px;
+          background-color: white;
+          margin-bottom: 20px;
+          overflow: hidden;
+  
+          h3  {
+              @include roboto700;
+              padding: 0;
+              margin: 0;
+              @include hidden-ellipsis;
+          }
+  
+          p {
+              @include roboto300;
+              padding: 0;
+              margin: 0;
+              @include hidden-ellipsis;
+          }
+  
+          .menu-section {
+              display: flex;
+              flex-direction: column;
+              margin-left: 15px;
+              gap: 3px;
+              @include hidden-ellipsis;
+          }
+  
+          .menu-price {
+              margin-left: auto;
+              display: flex;
+              flex-direction: column;
+              align-self: flex-end;
+              margin-bottom: 7px;
+              padding-right: 15px;
+          }
+      }
+  
+      .menu-check {
+        border: 1px solid $tertiary-color;
+        border-radius: 0;
+        padding: 1rem;
+        background-color: $tertiary-color;
+        margin-right: -3.2rem;
+        color: white;
+        transition: margin-right $transition-duration;
+  
+        .card-plat:hover &.menu-check {
+          margin-right: 0rem;
+        }
+    }
+  
+  .btn_command {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px;
+      padding-top: 15px;
+  }  
 }
+
