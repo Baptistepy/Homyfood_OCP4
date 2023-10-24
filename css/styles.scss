@@ -380,6 +380,40 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
+
+  .header_logo {
+    
   
+    .logo_omf {
+      width: 20%;
+    }
+  }
+
+  h2 {
+    margin-left: 150px;
+  }
+
+  .list_nav {
+    
+    .card_nav {
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      width: 250px;
+      position: relative;
+    }
+
+    ul {
+      flex-direction: row;
+    }
+
+    span {
+      position: initial;
+    }
+
+    b {
+      position: absolute;
+      margin-left: -10px;
+      left: 0;
+    }
+  }
 }
