@@ -44,7 +44,7 @@ $transition-duration: 500ms;
 
 $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 275px) {
   .header-menu {
 
     img {
@@ -86,27 +86,27 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
       z-index: 9999;
       position: relative;
       padding-bottom: 0px;
+      padding: 2rem;
     }
   
     h1 {
       color: var(--Black, #101010);
       @include shrikhand400;
-      margin-left: 15px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-      padding-top: 25px;
-      padding-left: 20px;
+      margin: 15px 0 0 0;
+      padding-top: 0px;
+      padding-left: 0px;
+      white-space: wrap;
     }       
   }
   
   .header-content-menu {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   
     i {
       position: absolute;
-      right: 40px;
-      top: 45px;
     }
   
     .fa-heart {

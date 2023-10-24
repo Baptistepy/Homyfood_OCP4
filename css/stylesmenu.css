@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 275px) {
   .header-menu img {
     width: 50%;
     margin: 15px;
@@ -31,6 +31,7 @@
     z-index: 9999;
     position: relative;
     padding-bottom: 0px;
+    padding: 2rem;
   }
   .main-menu h1 {
     color: var(--Black, #101010);
@@ -39,20 +40,19 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding-top: 25px;
-    padding-left: 20px;
+    margin: 15px 0 0 0;
+    padding-top: 0px;
+    padding-left: 0px;
+    white-space: wrap;
   }
   .header-content-menu {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
   .header-content-menu i {
     position: absolute;
-    right: 40px;
-    top: 45px;
   }
   .header-content-menu .fa-heart {
     font-size: 25px;
