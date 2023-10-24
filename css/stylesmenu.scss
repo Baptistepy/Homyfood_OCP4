@@ -72,7 +72,7 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
   }
 
   .content-menu {
-    padding: 30px;
+    padding: 20px;
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
@@ -198,6 +198,7 @@ main article {
         background-color: white;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
+        overflow: hidden;
 
         h3  {
             @include roboto700;
@@ -214,18 +215,36 @@ main article {
         .menu-section {
             display: flex;
             flex-direction: column;
-            padding: 1rem;
+            margin-left: 15px;
+            gap: 3px;
         }
 
         .menu-price {
             margin-left: auto;
-            padding: 1rem;
-        }
-
-        .menu-check {
-            background-color: $tertiary-color;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            margin-bottom: 7px;
+            padding-right: 15px;
         }
     }
+
+    .menu-check {
+      border: 1px solid $tertiary-color;
+      border-radius: 0;
+      padding: 1rem;
+      background-color: $tertiary-color;
+      margin-right: -3.1rem;
+      color: white;
+      transition: margin-right $transition-duration;
+
+      .card-plat:hover &.menu-check {
+        margin-right: 0rem;
+      }
+  }
+
+
+
 
 
 .btn_command {
