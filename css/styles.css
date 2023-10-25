@@ -315,15 +315,21 @@ footer h3 {
     width: 20%;
   }
   h2 {
-    margin-left: 150px;
+    margin-left: 15px;
+    display: flex;
+  }
+  .list_nav {
+    padding-left: 70px;
+    padding-right: 70px;
   }
   .list_nav .card_nav {
     padding: 0.5rem 1rem 0.5rem 1rem;
-    width: 250px;
+    width: 100%;
     position: relative;
   }
   .list_nav ul {
     flex-direction: row;
+    justify-content: space-between;
   }
   .list_nav span {
     position: initial;
@@ -332,5 +338,14 @@ footer h3 {
     position: absolute;
     margin-left: -10px;
     left: 0;
+  }
+  #restaurants {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  #restaurants ul {
+    flex-direction: row;
+    width: calc((100% - 60px) / 2);
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=styles.css.map */

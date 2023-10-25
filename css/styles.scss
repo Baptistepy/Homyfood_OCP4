@@ -57,7 +57,10 @@ $tertiary-color: #99E2D0;
 $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
 
 
-
+@mixin padding-desktop {
+  padding-left: 70px;
+  padding-right: 70px;
+}
 
 @media (min-width: 335px) {
   .loader {
@@ -391,19 +394,23 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
   }
 
   h2 {
-    margin-left: 150px;
+    margin-left: 15px;
+    display: flex;
   }
 
   .list_nav {
-    
+
+    @include padding-desktop();
+
     .card_nav {
       padding: 0.5rem 1rem 0.5rem 1rem;
-      width: 250px;
+      width: 100%;
       position: relative;
     }
 
     ul {
       flex-direction: row;
+      justify-content: space-between;
     }
 
     span {
@@ -414,6 +421,16 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
       position: absolute;
       margin-left: -10px;
       left: 0;
+    }
+  }
+
+  #restaurants {
+    @include padding-desktop();
+
+    ul {
+      flex-direction: row;
+      width: calc((100% - 60px) / 2);
+      flex-wrap: wrap;
     }
   }
 }
