@@ -10,10 +10,10 @@ $tertiary-color: #99E2D0;
     line-height: normal; 
 }
 
-@mixin roboto300 {
+@mixin roboto300($style: normal) {
     font-family: Roboto;
     font-size: 15px;
-    font-style: normal;
+    font-style: $style;
     font-weight: 300;
     line-height: normal; 
 }
@@ -44,7 +44,6 @@ $transition-duration: 500ms;
 
 $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
 
-@media screen and (min-width: 275px) {
   .header-menu {
 
     img {
@@ -65,7 +64,7 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
     }
   }
   
-  #menu {
+  [id="menu"] {
       background-color:var(--Background, #F6F6F6)
   }
   
@@ -214,7 +213,7 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
           }
   
           p {
-              @include roboto300;
+              @include roboto300("italic");
               padding: 0;
               margin: 0;
               @include hidden-ellipsis;
@@ -258,9 +257,6 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
       padding-bottom: 40px;
       padding-top: 15px;
   }  
-}
 
-@media screen and (min-width: 992px) {
-  
-}
+
 
