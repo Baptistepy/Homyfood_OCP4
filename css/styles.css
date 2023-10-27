@@ -1,4 +1,5 @@
 @import "../css/stylesmenu.css";
+@import "../css/_mixins.css";
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -154,8 +155,9 @@ form .form_search {
 }
 
 .list_nav {
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 40px;
 }
 .list_nav ul {

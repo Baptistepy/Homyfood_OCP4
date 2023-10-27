@@ -1,0 +1,37 @@
+@mixin roboto500 {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+@mixin roboto300($style: normal) {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: $style;
+    font-weight: 300;
+    line-height: normal; 
+}
+
+@mixin roboto700 {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+@mixin shrikhand400 {
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin hidden-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

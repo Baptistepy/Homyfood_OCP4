@@ -33,29 +33,8 @@ footer h3 {
 }
 
 @import "../css/stylesmenu.css";
-
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-
-@mixin roboto500 {
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal; 
-}
-
-@mixin roboto300($style: normal) {
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: $style;
-  font-weight: 300;
-  line-height: normal; 
-}
-
-
-$gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
+@import "../css/_mixins.css";
+@import "../css/_var.scss";
 
 
 @mixin padding-desktop {
@@ -194,8 +173,10 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
   }
   
   .list_nav {
+
+    display: flex;
+    flex-direction: column;
     padding-left: 20px;
-    padding-right: 20px;
     margin-bottom: 40px;
   
     ul {
