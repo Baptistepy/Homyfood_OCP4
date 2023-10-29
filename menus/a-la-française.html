@@ -10,89 +10,112 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/stylesmenu.css">
     </head>
 
     <body id="menu">
-        <header>
+        <header class="header-menu">
             <a href="../index.html">
                 <span class="fa-solid fa-arrow-left"></span>
                 <img src="../images/logo/ohmyfood.png" alt="logo ohmyfood">
             </a>
         </header>
 
-        <main>
+        <main class="main-menu">
             <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
 
-            <article>
-                <header class="">
+            <article class="content-menu">
+                <header class="header-content-menu">
                     <h1>À la française</h1>
-                    <span class="fa-solid fa-heart"></span>
+                    <div class="card_heart">
+                        <input type="checkbox" id="check-heart-one" name="check" checked="">
+                        <label for="check-heart-one" class="heart-content">
+                            <i class="fa-regular fa-heart fa-xl heart_empty"></i>
+                            <i class="fa-solid fa-heart fa-xl heart_full"></i>
+                        </label>
+                    </div>
                 </header>
 
-                <section>
+                <section class="section-menu">
                     <h2>Entrées</h2>
 
-                    <ul>
-                        <li>
-                            <section>
-                                <h3>Tartare de poulpe acidulé</h3>
-                                <p>Aux zestes d'orange</p>
+                    <ul class="list-menu">
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Tartare de poulpe acidulé</h3>
+                                <p class="menu-description">Aux zestes d'orange</p>
                             </section>
 
-                            <b>25€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">25€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Velouté de légumes d'antan</h3>
-                                <p>Carotte, panais, topinambour</p>
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Velouté de légumes d'antan</h3>
+                                <p class="menu-description">Carotte, panais, topinambour</p>
                             </section>
 
-                            <b>35€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">35€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Soupe à l'oignon</h3>
-                                <p>Revisitée</p>                               
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Soupe à l'oignon</h3>
+                                <p class="menu-description">Revisitée</p>                               
                             </section>
 
-                            <b>20€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">20€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
                     </ul>
                 </section>
                 
-                <section>
+                <section class="section-menu">
                     <h2>Plats</h2>
 
-                    <ul>
-                        <li>
-                            <section>
-                                <h3>Coquilles Saint-Jacques</h3>
-                                <p>Accompagnées d'une purée de panais</p>
+                    <ul class="list-menu">
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Coquilles Saint-Jacques</h3>
+                                <p class="menu-description">Accompagnées d'une purée de panais</p>
                             </section>
                             
-                            <b>40€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">40€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Magret de canard</h3>
-                                <p>Et parmentier de pommes de terre</p>
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Magret de canard</h3>
+                                <p class="menu-description">Et parmentier de pommes de terre</p>
                             </section>
 
-                            <b>35€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">35€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-                                <p>Sur son lit de gnocchis aux légumes</p>
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Pigeonneau d'Ille-et-Vilaine</h3>
+                                <p class="menu-description">Sur son lit de gnocchis aux légumes</p>
                             </section>
                             
-                            <b>44€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">44€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
                     </ul>
                 </section>
