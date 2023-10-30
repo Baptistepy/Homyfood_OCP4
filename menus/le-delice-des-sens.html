@@ -10,129 +10,162 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/stylesmenu.css">
     </head>
 
     <body id="menu">
-        <header>
+        <header class="header_menu">
             <a href="../index.html">
                 <span class="fa-solid fa-arrow-left"></span>
                 <img src="../images/logo/ohmyfood.png" alt="logo ohmyfood">
             </a>
         </header>
 
-        <main>
+        <main class="main-menu">
             <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
 
-            <article>
-                <header>
+            <article class="content_menu">
+                <header class="header-content-menu">
                     <h1>Le délice des sens</h1>
-                    <span class="fa-solid fa-heart"></span>
+                    <div class="card_heart">
+                        <input type="checkbox" id="check-heart-one" name="check" checked="">
+                        <label for="check-heart-one" class="heart-content">
+                            <i class="fa-regular fa-heart fa-xl heart_empty"></i>
+                            <i class="fa-solid fa-heart fa-xl heart_full"></i>
+                        </label>
+                    </div>
                 </header>
 
-                <section>
+                <section class="section-menu">
                     <h2>Entrées</h2>
 
-                    <ul>
-                        <li>
-                            <section>
-                                <h3>Tartarer de thon</h3>
-                                <p>assaisonné au yuzu</p>
+                    <ul class="list-menu">
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Tartarer de thon</h3>
+                                <p class="menu-description">assaisonné au yuzu</p>
                             </section>
 
-                            <b>25€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">25€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Bouchée de homard croustillant</h3>
-                                <p>Et sa farandole de petits légumes</p>
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Bouchée de homard croustillant</h3>
+                                <p class="menu-description">Et sa farandole de petits légumes</p>
                             </section>
 
-                            <b>35€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">35€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Velouté de cèpes</h3>
-                                <p>aux truffes</p>                               
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Velouté de cèpes</h3>
+                                <p class="menu-description">aux truffes</p>                               
                             </section>
 
-                            <b>20€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">20€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
                     </ul>
                 </section>
                 
-                <section>
+                <section class="section-menu">
                     <h2>Plats</h2>
 
-                    <ul>
-                        <li>
-                            <section>
-                                <h3>Poulet rôti aux herbes de Provence</h3>
-                                <p>Et sa crème de truffe</p>
+                    <ul class="list-menu">
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Poulet rôti aux herbes de Provence</h3>
+                                <p class="menu-description">Et sa crème de truffe</p>
                             </section>
                             
-                            <b>40€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">40€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Langouste rôtie</h3>
-                                <p>Et ses légumes de saison</p>
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Langouste rôtie</h3>
+                                <p class="menu-description">Et ses légumes de saison</p>
                             </section>
 
-                            <b>35€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">35€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Côte de boeuf Angus</h3>
-                                <p>Et sa purée de panais</p>
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Côte de boeuf Angus</h3>
+                                <p class="menu-description">Et sa purée de panais</p>
                             </section>
                             
-                            <b>44€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">44€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
                     </ul>
                 </section>
 
-                <section>
+                <section class="section-menu">
                     <h2>Desserts</h2>
 
-                    <ul>
-                        <li>
-                            <section>
-                                <h3>Farandole de desserts</h3>
-                                <p>Du chef</p>
+                    <ul class="list-menu">
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Farandole de desserts</h3>
+                                <p class="menu-description">Du chef</p>
                             </section>
 
-                            <b>18€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">18€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Crème brulée </h3>
-                                <p>Revisitée</p>
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Crème brulée </h3>
+                                <p class="menu-description">Revisitée</p>
                             </section>
 
-                            <b>22€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">22€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
-                        <li>
-                            <section>
-                                <h3>Tiramisu</h3>
-                                <p>à la noisette</p>
+
+                        <li class="card-plat">
+                            <section class="menu-section">
+                                <h3 class="menu-title">Tiramisu</h3>
+                                <p class="menu-description">à la noisette</p>
                             </section>
 
-                            <b>23€</b>
-                            <span class="fa-solid fa-circle-check"></span>
+                            <b class="menu-price">23€</b>
+                            <div class="menu-check">
+                                <span class="fa-solid fa-circle-check"></span>
+                            </div>
                         </li>
                     </ul>
                 </section>
             </article>
 
-            <button>Commander</button>
+            <div class="btn_command">
+                <button class="btn_gradient">Commander</button>
+            </div>
         </main>
 
         <footer>
