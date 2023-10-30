@@ -232,7 +232,7 @@ footer h3 {
     }
   }
   
-  #restaurants {
+  [id="restaurants"] {
     display: flex;
     flex-direction: column;
     padding-left: 18px;
@@ -393,17 +393,68 @@ footer h3 {
       left: 0;
     }
   }
-
-  #restaurants {
-    
-  }
 }
 
 @media (min-width: 992px) {
+
   .list_nav {
-    
+    display: flex;
+    justify-content: center;
+
     ul {
       flex-direction: row;
     }
+  }
+
+  [id="restaurants"] {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    .card_resto {
+      flex-basis: calc(50% - 20px);
+      margin-bottom: 20px;
+    }
+  }
+
+  footer {
+    flex-direction: row-reverse;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-top: 55px;
+    gap: 85px;
+
+    ul {
+      flex-direction: row;
+      gap: 30px;
+      padding-top: 35px;
+      margin-bottom: 0px;
+    }
+
+    h3 {
+      padding-top : 1rem;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .list_nav {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  [id="restaurants"] {
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }
