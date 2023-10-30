@@ -18,6 +18,10 @@
   background-color: var(--Background, #F6F6F6);
 }
 
+.header-menu img {
+  width: 20%;
+}
+
 .main-menu img {
   max-width: 100%;
   max-height: 32rem;
@@ -208,4 +212,17 @@ main article {
   justify-content: center;
   padding-bottom: 40px;
   padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .main-menu .content-menu {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 992px) {
+  .main-menu .content-menu {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }/*# sourceMappingURL=stylesmenu.css.map */

@@ -177,6 +177,7 @@ footer h3 {
     flex-direction: column;
     padding-left: 20px;
     margin-bottom: 40px;
+    font-weight: bolder;
   
     ul {
       display: flex;
@@ -400,6 +401,10 @@ footer h3 {
   .list_nav {
     display: flex;
     justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: smaller;
+    font-weight: bolder;
 
     ul {
       flex-direction: row;
@@ -410,6 +415,8 @@ footer h3 {
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
 
     ul {
       display: flex;
@@ -449,12 +456,13 @@ footer h3 {
 @media (min-width: 1200px) {
 
   .list_nav {
-    margin-left: 150px;
-    margin-right: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: larger;
   }
 
   [id="restaurants"] {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
