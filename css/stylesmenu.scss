@@ -2,6 +2,45 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
+@mixin roboto500 {
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
+}
+
+@mixin roboto300($style: normal) {
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: $style;
+  font-weight: 300;
+  line-height: normal; 
+}
+
+@mixin roboto700 {
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+}
+
+@mixin shrikhand400 {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin hidden-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@import "../css/_mixins.css";
 
 
 $transition-duration: 500ms;
@@ -31,46 +70,6 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
   [id="menu"] {
       background-color:var(--Background, #F6F6F6)
   }
-  
-  @mixin roboto500 {
-    font-family: Roboto;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal; 
-}
-
-@mixin roboto300($style: normal) {
-    font-family: Roboto;
-    font-size: 15px;
-    font-style: $style;
-    font-weight: 300;
-    line-height: normal; 
-}
-
-@mixin roboto700 {
-    font-family: Roboto;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; 
-}
-
-@mixin shrikhand400 {
-    font-family: Shrikhand;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-@mixin hidden-ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-  @import "../css/_mixins.css";
 
   .header-menu {
     
