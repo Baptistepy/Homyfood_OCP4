@@ -111,8 +111,10 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
+    padding-right: 15%;
+    padding-left: 5%;
   
     i {
       position: absolute;
@@ -275,6 +277,10 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
       margin-left: 10%;
       margin-right: 10%;
     }
+  }
+
+  .header-content-menu {
+    justify-content: center;
   }
 }
 
