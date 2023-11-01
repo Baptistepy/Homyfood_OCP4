@@ -217,6 +217,9 @@ main article {
 }
 
 @media (min-width: 768px) {
+  .main-menu {
+    background-color: white;
+  }
   .main-menu .content-menu {
     margin-left: 10%;
     margin-right: 10%;
