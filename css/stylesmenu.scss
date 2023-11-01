@@ -40,6 +40,11 @@ $tertiary-color: #99E2D0;
   text-overflow: ellipsis;
 }
 
+@mixin margin10percent {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 @import "../css/_mixins.css";
 
 
@@ -288,8 +293,7 @@ $gradient: linear-gradient(193deg, #9356DC -11.44%, $secondary-color 123.93%);
   .main-menu {
     
     .content-menu {
-      margin-left: 10%;
-      margin-right: 10%;
+      @include margin10percent;
     }
   }
 }

@@ -457,13 +457,12 @@ footer h3 {
 @media (min-width: 1200px) {
 
   .list_nav {
-    padding-left: 10%;
-    padding-right: 10%;
+    @include margin10percent;
     font-size: larger;
   }
 
   [id="restaurants"] {
-    padding-left: 10%;
-    padding-right: 10%;
+    @include margin10percent;
+    font-size: larger;
   }
 }
