@@ -253,7 +253,7 @@ form .form_search {
 [id=restaurants] i {
   position: absolute;
   right: 30px;
-  top: 180px;
+  bottom: 50px;
 }
 [id=restaurants] .fa-heart {
   font-size: 25px;
