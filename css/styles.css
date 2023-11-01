@@ -371,6 +371,10 @@ footer a {
   }
   .list_nav ul {
     flex-direction: row;
+    justify-content: space-between;
+  }
+  .list_nav .card_nav {
+    width: 100%;
   }
   footer {
     flex-direction: row-reverse;
@@ -393,13 +397,9 @@ footer a {
 }
 @media (min-width: 1200px) {
   .list_nav {
-    padding-left: 10%;
-    padding-right: 10%;
     font-size: larger;
   }
   [id=restaurants] {
-    padding-left: 10%;
-    padding-right: 10%;
     font-size: larger;
   }
 }/*# sourceMappingURL=styles.css.map */

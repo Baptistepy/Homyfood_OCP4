@@ -428,9 +428,13 @@ footer h3 {
 
     ul {
       flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .card_nav {
+      width: 100%;
     }
   }
-
 
   footer {
     flex-direction: row-reverse;
@@ -457,12 +461,10 @@ footer h3 {
 @media (min-width: 1200px) {
 
   .list_nav {
-    @include margin10percent;
     font-size: larger;
   }
 
   [id="restaurants"] {
-    @include margin10percent;
     font-size: larger;
   }
 }
