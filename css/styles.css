@@ -402,4 +402,7 @@ footer a {
   [id=restaurants] {
     font-size: larger;
   }
+  [id=restaurants] img {
+    height: 200px;
+  }
 }/*# sourceMappingURL=styles.css.map */
