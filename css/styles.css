@@ -328,7 +328,6 @@ footer a {
   }
   .list_nav .card_nav {
     padding: 0.5rem 1rem 0.5rem 1rem;
-    width: 100%;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -341,6 +340,24 @@ footer a {
     position: absolute;
     margin-left: -10px;
     left: 0;
+  }
+  [id=restaurants] {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: smaller;
+  }
+  [id=restaurants] ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  [id=restaurants] .card_resto {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -355,27 +372,10 @@ footer a {
   .list_nav ul {
     flex-direction: row;
   }
-  [id=restaurants] {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  [id=restaurants] ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  [id=restaurants] .card_resto {
-    flex-basis: calc(50% - 20px);
-    margin-bottom: 20px;
-  }
   footer {
     flex-direction: row-reverse;
     padding-right: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     padding-top: 55px;
     gap: 85px;
   }
