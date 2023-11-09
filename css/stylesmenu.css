@@ -32,8 +32,7 @@
   max-width: 100%;
   max-height: 32rem;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-menu .content-menu {
   padding: 20px;
@@ -54,7 +53,6 @@
   line-height: normal;
   padding-top: 0px;
   padding-left: 0px;
-  white-space: wrap;
 }
 
 .header-content-menu {
@@ -76,10 +74,6 @@
 .header-content-menu .heart_full {
   transition: all 500ms;
   opacity: 1;
-  color: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: #9356DC;
 }
 .header-content-menu .heart_empty {
   position: absolute;
@@ -159,7 +153,6 @@ main article {
 .card-plat p {
   font-family: Roboto;
   font-size: 15px;
-  font-style: "italic";
   font-weight: 300;
   line-height: normal;
   padding: 0;
